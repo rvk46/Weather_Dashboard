@@ -1,0 +1,12 @@
+Django
+djangorestframework
+django-rest-auth
+django-cors-headers
+psycopg2-binary
+pandas
+joblib
+gunicorn
+pytz
+sqlparse
+whitenoise
+scikit-learn
