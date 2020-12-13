@@ -10,8 +10,7 @@
 
 First clone this repository.
 ```bash
-$ git clone https://github.com/
-```
+$ git clone https://github.com/rvk46/Weather_Dashboard
 #For backend
 (For Windows)
 Setup Virtual Environment 
