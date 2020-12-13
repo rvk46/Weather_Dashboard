@@ -51,6 +51,7 @@ class Dropdown extends Component {
     this.setState({
       listOpen: false,
     });
+
   }
 
   selectItem(title, id, stateKey) {
@@ -60,9 +61,12 @@ class Dropdown extends Component {
       headerTitle: title,
       listOpen: false,
     }, resetThenSet(id, stateKey));
+    
+    
   }
 
   toggleList() {
+  
     this.setState((prevState) => ({
       listOpen: !prevState.listOpen,
       keyword: '',
@@ -75,6 +79,7 @@ class Dropdown extends Component {
         });
       }
     });
+    
   }
 
   filterList(e) {
@@ -88,7 +93,7 @@ class Dropdown extends Component {
     const { keyword } = this.state;
 
     let tempList = list;
-
+    
     if (keyword.length) {
       tempList = list
         .filter((item) => (
@@ -119,7 +124,7 @@ class Dropdown extends Component {
 
     return <div className="dd-list-item no-result">{searchable[1]}</div>;
   }
-
+  
   render() {
     const { searchable } = this.props;
     const { listOpen, headerTitle } = this.state;
@@ -131,6 +136,7 @@ class Dropdown extends Component {
           className="dd-header"
           onClick={() => this.toggleList()}
         >
+          <input type="hidden" name="city" value={headerTitle}/>
           <div className="dd-header-title">{headerTitle}</div>
           {listOpen
             ? <FontAwesome name="angle-up" size="2x" />
@@ -157,6 +163,7 @@ class Dropdown extends Component {
           </div>
         )}
       </div>
+      
     );
   }
 }

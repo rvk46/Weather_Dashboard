@@ -13,6 +13,17 @@
   }
 }
 
+body, html {
+  height: 100%;
+}
+.bg {
+  background-image: url("https://www.pexels.com/photo/4794110/");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,6 +39,26 @@
   color: #61dafb;
 }
 
+.bg_image{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  flex-direction: column;
+  background-image: url('./components/img/background.jpg');
+  background-size: cover;
+  height: 100vh;
+  color: #f5f5f5;
+}
+.bg_image > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
