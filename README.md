@@ -32,7 +32,8 @@ $ pip install req.txt
 $ python manage.py makemigrations
 $ python manage.py migrate
 ```
-* Add the city data like http://localhost:8000/api/?cities=Jaipur&lat=26.9&lon=75.7 and temperature data http://localhost:8000/api/temp?city=Jaipur
+* Add the city data likehttp://localhost:8000/addcity?city=Jaipur&lat=26.9&lon=75.7 and temperature data http://localhost:8000/addtemp?cities=Jaipur,Kanpur&date=09/12/2020
+
 
 
 
